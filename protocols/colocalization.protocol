@@ -1,0 +1,167 @@
+<protocol VERSION="4">
+<blocks>
+<block CommandLineID="" ID="1596694402" blockType="plugins.adufour.blocks.tools.input.Sequence" className="plugins.adufour.blocks.tools.input.Sequence" collapsed="false" definedName="Sequence" height="61" keepsResults="true" width="176" xLocation="68" yLocation="287">
+<variables>
+<input>
+<variable ID="input sequence" name="sequence" runtime="false" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+<block ID="460907055" blockType="plugins.tprovoost.sequenceblocks.extract.ExtractChannel" className="plugins.tprovoost.sequenceblocks.SequenceBlocks" collapsed="false" definedName="Extract channel" height="108" keepsResults="true" width="232" xLocation="330" yLocation="136">
+<variables>
+<input>
+<variable ID="sequence" name="Sequence" runtime="false" visible="true"/>
+<variable ID="channel" name="Channel" runtime="false" value="0" visible="true"/>
+</input>
+<output>
+<variable ID="extracted" name="Extracted" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1576079004" blockType="plugins.tprovoost.sequenceblocks.extract.ExtractChannel" className="plugins.tprovoost.sequenceblocks.SequenceBlocks" collapsed="false" definedName="Extract channel" height="108" keepsResults="true" width="232" xLocation="331" yLocation="418">
+<variables>
+<input>
+<variable ID="sequence" name="Sequence" runtime="false" visible="true"/>
+<variable ID="channel" name="Channel" runtime="false" value="1" visible="true"/>
+</input>
+<output>
+<variable ID="extracted" name="Extracted" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="806198112" blockType="plugins.adufour.filtering.GaussianFilter" className="plugins.adufour.filtering.FilterToolbox" collapsed="false" definedName="Gaussian filter" height="158" keepsResults="true" width="230" xLocation="671" yLocation="112">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+<variable ID="filterX" name="sigma (x)" runtime="false" value="1.0" visible="true"/>
+<variable ID="filterY" name="sigma (y)" runtime="false" value="1.0" visible="true"/>
+<variable ID="filterZ" name="sigma (z)" runtime="false" value="1.0" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1770678165" blockType="plugins.tprovoost.bestthreshold.BestThreshold" className="plugins.tprovoost.bestthreshold.BestThreshold" collapsed="false" definedName="Best Threshold" height="174" keepsResults="true" width="225" xLocation="1043" yLocation="99">
+<variables>
+<input>
+<variable ID="Input" name="Input" runtime="false" visible="true"/>
+<variable ID="Method" name="Method" runtime="false" value="Otsu" visible="true"/>
+<variable ID="Channel" name="Channel" runtime="false" value="0" visible="true"/>
+<variable ID="Slice" name="Slice" runtime="false" value="0" visible="true"/>
+<variable ID="Time" name="Time" runtime="false" value="0" visible="true"/>
+</input>
+<output>
+<variable ID="result" name="result" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="646871550" blockType="plugins.adufour.filtering.GaussianFilter" className="plugins.adufour.filtering.FilterToolbox" collapsed="false" definedName="Gaussian filter" height="158" keepsResults="true" width="230" xLocation="668" yLocation="383">
+<variables>
+<input>
+<variable ID="input" name="input" runtime="false" visible="true"/>
+<variable ID="filterX" name="sigma (x)" runtime="false" value="1.0" visible="true"/>
+<variable ID="filterY" name="sigma (y)" runtime="false" value="1.0" visible="true"/>
+<variable ID="filterZ" name="sigma (z)" runtime="false" value="1.0" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="output" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1453375540" blockType="plugins.tprovoost.bestthreshold.BestThreshold" className="plugins.tprovoost.bestthreshold.BestThreshold" collapsed="false" definedName="Best Threshold" height="180" keepsResults="true" width="225" xLocation="1042" yLocation="370">
+<variables>
+<input>
+<variable ID="Input" name="Input" runtime="false" visible="true"/>
+<variable ID="Method" name="Method" runtime="false" value="Otsu" visible="true"/>
+<variable ID="Channel" name="Channel" runtime="false" value="0" visible="true"/>
+<variable ID="Slice" name="Slice" runtime="false" value="0" visible="true"/>
+<variable ID="Time" name="Time" runtime="false" value="0" visible="true"/>
+</input>
+<output>
+<variable ID="result" name="result" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1940920767" blockType="plugins.adufour.thresholder.Thresholder" className="plugins.adufour.thresholder.Thresholder" collapsed="false" definedName="Thresholder" height="179" keepsResults="true" width="281" xLocation="1386" yLocation="93">
+<variables>
+<input>
+<variable ID="Input" name="Input" runtime="false" visible="true"/>
+<variable ID="channel" name="channel" runtime="false" value="0" visible="true"/>
+<variable ID="Manual thresholds" name="Manual thresholds" runtime="false" visible="true"/>
+<variable ID="Treat as percentiles" name="Treat as percentiles" runtime="false" value="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="Binary output" runtime="false" visible="true"/>
+<variable ID="ROI" name="ROI" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1421442392" blockType="plugins.adufour.thresholder.Thresholder" className="plugins.adufour.thresholder.Thresholder" collapsed="false" definedName="Thresholder" height="179" keepsResults="true" width="281" xLocation="1390" yLocation="364">
+<variables>
+<input>
+<variable ID="Input" name="Input" runtime="false" visible="true"/>
+<variable ID="channel" name="channel" runtime="false" value="0" visible="true"/>
+<variable ID="Manual thresholds" name="Manual thresholds" runtime="false" visible="true"/>
+<variable ID="Treat as percentiles" name="Treat as percentiles" runtime="false" value="false" visible="true"/>
+</input>
+<output>
+<variable ID="output" name="Binary output" runtime="false" visible="true"/>
+<variable ID="ROI" name="ROI" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1268239389" blockType="plugins.lagache.colocalizationstudio.ColocalizationStudio_Correlation" className="plugins.lagache.colocalizationstudio.ColocalizationStudio" collapsed="false" definedName="Colocalization studio_ correlation" height="371" keepsResults="true" width="437" xLocation="1823" yLocation="150">
+<variables>
+<input>
+<variable ID="Input Sequence 1" name="Input sequence 1" runtime="false" visible="true"/>
+<variable ID="Input Sequence 2" name="Input sequence 2" runtime="false" visible="true"/>
+<variable ID="Analysis ROIs" name="Analysis ROIs" runtime="false" value="No ROI" visible="true"/>
+<variable ID="ROIs for Manders Seq. 1" name="ROIs for Manders analysis Seq1" runtime="false" visible="true"/>
+<variable ID="ROIs for Manders Seq. 2" name="ROIs for Manders analysis Seq2" runtime="false" visible="true"/>
+<variable ID="Consider pixel surface for Manders Analysis" name="Consider pixel surface for Manders analysis" runtime="false" value="false" visible="true"/>
+</input>
+<output>
+<variable ID="Pearson Coeff. R" name="Pearson coeff. R" runtime="false" visible="true"/>
+<variable ID="Pearson p-value" name="p value Pearson (Randomization)" runtime="false" visible="true"/>
+<variable ID="Manders M1" name="Manders M1" runtime="false" visible="true"/>
+<variable ID="M1 p-value" name="p value M1 (Randomization)" runtime="false" visible="true"/>
+<variable ID="Manders M2" name="Manders M2" runtime="false" visible="true"/>
+<variable ID="M2 p-value" name="p value M2 (Randomization)" runtime="false" visible="true"/>
+<variable ID="Cross-Correlation 1" name="Cross-Correlation 1" runtime="false" visible="true"/>
+<variable ID="Cross-Correlation 2" name="Cross-Correlation 2" runtime="false" visible="true"/>
+<variable ID="Workbook" name="Workbook" runtime="false" visible="true"/>
+</output>
+</variables>
+</block>
+<block ID="1483068914" blockType="plugins.adufour.blocks.tools.io.WorkbookToFile" className="plugins.adufour.blocks.tools.io.WorkbookToFile" collapsed="false" definedName="Workbook to file" height="207" keepsResults="true" width="499" xLocation="2344" yLocation="357">
+<variables>
+<input>
+<variable ID="workbook" name="workbook" runtime="false" visible="true"/>
+<variable ID="file format" name="file format" runtime="false" value="Spreadsheet" visible="true"/>
+<variable ID="output file" name="output file" runtime="false" value="\\Mds\user\M-R\PikeJA\test" visible="true"/>
+<variable ID="If file exists" name="If file exists" runtime="false" value="Overwrite" visible="true"/>
+</input>
+<output/>
+</variables>
+</block>
+</blocks>
+<links>
+<link dstBlockID="460907055" dstVarID="sequence" srcBlockID="1596694402" srcVarID="input sequence"/>
+<link dstBlockID="1576079004" dstVarID="sequence" srcBlockID="1596694402" srcVarID="input sequence"/>
+<link dstBlockID="806198112" dstVarID="input" srcBlockID="460907055" srcVarID="extracted"/>
+<link dstBlockID="646871550" dstVarID="input" srcBlockID="1576079004" srcVarID="extracted"/>
+<link dstBlockID="1770678165" dstVarID="Input" srcBlockID="806198112" srcVarID="output"/>
+<link dstBlockID="1453375540" dstVarID="Input" srcBlockID="646871550" srcVarID="output"/>
+<link dstBlockID="1940920767" dstVarID="Input" srcBlockID="1770678165" srcVarID="Input"/>
+<link dstBlockID="1940920767" dstVarID="Manual thresholds" srcBlockID="1770678165" srcVarID="result"/>
+<link dstBlockID="1421442392" dstVarID="Manual thresholds" srcBlockID="1453375540" srcVarID="result"/>
+<link dstBlockID="1421442392" dstVarID="Input" srcBlockID="1453375540" srcVarID="Input"/>
+<link dstBlockID="1268239389" dstVarID="ROIs for Manders Seq. 1" srcBlockID="1940920767" srcVarID="ROI"/>
+<link dstBlockID="1268239389" dstVarID="ROIs for Manders Seq. 2" srcBlockID="1421442392" srcVarID="ROI"/>
+<link dstBlockID="1268239389" dstVarID="Input Sequence 1" srcBlockID="460907055" srcVarID="extracted"/>
+<link dstBlockID="1268239389" dstVarID="Input Sequence 2" srcBlockID="1576079004" srcVarID="extracted"/>
+<link dstBlockID="1483068914" dstVarID="workbook" srcBlockID="1268239389" srcVarID="Workbook"/>
+</links>
+</protocol>
