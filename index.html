@@ -32,7 +32,7 @@
 <h1>
 <a id="summary" class="anchor" href="#summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary</h1>
 
-<p>This course will cover common image analysis problems including deconvolution, segmentation, tracking and colocalization analysis. Graphical programming and scripting for workflow automation will also be introduced. The course will focus on practical sessions using leading open source software.</p>
+<p>This course will cover common image analysis problems including deconvolution, denoising, segmentation, tracking and colocalization analysis. The course will focus on practical sessions using leading open source software.</p>
 
 <h1>
 <a id="audience" class="anchor" href="#audience" aria-hidden="true"><span class="octicon octicon-link"></span></a>Target Audience</h1>
@@ -50,10 +50,11 @@
 <p>After this course particpants should be able to:</p>
 <ul type="disk">
     <li>Perform deconvolution of wide-field datasets.</li>
+    <li>Use self-supervised deep learning based denosing</li>
     <li>Use advanced segmentation algorithms, to include machine learning and model based approaches.</li>
     <li>Track objects in time-lapse data, for example cell tracking.</li>
     <li>Understand and implement good practice for colocalization analysis. We will focus on pixel based approaches as object based analysis will be covered in our SMLM course.</li>	
-    <li>Automate analysis workflows using both graphical and scripting approaches.</li>
+    <li>Automate analysis workflows using ImageJ macro language.</li>
 
 </ul>
 
@@ -64,8 +65,10 @@
 <ul type="disk">
 <li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/IntermediateImageAnalysisSlides.pdf">Lecture Slides</a></li>
 <li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/IntermediateImageAnalysisExercises.pdf">Exercises</a></li>
-<li><a target="_blank" href="https://drive.google.com/open?id=147lJlZfTyZRJbO-jTlHOX-bmWLwWJcJ8">Sample Data Zip file </a></li>    
-<li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/protocols.zip">Icy Protocols Zip file</a></li>
+<li><a target="_blank" href="https://bham-my.sharepoint.com/personal/j_a_pike_bham_ac_uk/_layouts/15/guestaccess.aspx?guestaccesstoken=nG7RzqrF8ttO5aY%2Bau6fbhX9eg8gCyysYqmc%2BXkW3Jo%3D&docid=2_0dce43e0d2e514baea3b544f5395944de&rev=1&e=pLFbyc">Sample Data Zip file </a></li>    
+<li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/macros/batch_stardist.ijm">StarDist macro</a></li>
+<li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/macros/simple_coloc_macro.ijm">Colocalization macro (single file)</a></li>
+<li><a target="_blank" href="https://rawgit.com/JeremyPike/intermediate-image-analysis/master/macros/batch_coloc_macro.ijm">Colocalization macro (batch)</a></li>
 </ul>
 
 
@@ -78,7 +81,7 @@
 <a id="fiji" class="anchor" href="#fiji" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fiji</h1>	
 <ul type="disk">
 <li><a target="_blank" href="http://imagej.net/Fiji/Downloads">Fiji download</a></li>
-<li><a target="_blank" href="http://forum.imagej.net/">ImageJ Forum</a></li>
+<li><a target="_blank" href="https://forum.image.sc//">image.sc forum</a></li>
 <li><a target="_blank" href="https://imagej.net/TrackMate">TrackMate documentation</a></li>
 <li><a target="_blank" href="http://mosaic.mpi-cbg.de/?q=downloads/imageJ">MOSAIC suite for ImageJ/Fiji documentation</a></li>
 </ul>
@@ -93,12 +96,26 @@
 </h2>
 
 <h2>
-<a id="icy" class="anchor" href="#icy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Icy</h1>	
+<a id="cellpose" class="anchor" href="#cellpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Icy</h1>	
 <ul type="disk">
-<li><a target="_blank" href="http://icy.bioimageanalysis.org/download">Icy download</a></li>
-<li><a target="_blank" href="http://icy.bioimageanalysis.org/support">Icy Forum</a></li>
-<li><a target="_blank" href="http://icy.bioimageanalysis.org/doc/icy-protocols.pdf">Protocols documentation</a></li>
-<li><a target="_blank" href="http://icy.bioimageanalysis.org/plugin/Colocalization_Studio">Colocalization Studio documentation</a></li>
+<li><a target="_blank" href="https://www.cellpose.org/">Cellpose webapp</a></li>
+<li><a target="_blank" href="https://cellpose.readthedocs.io/en/latest/">Cellpose documentation</a></li>
+</ul>
+</h2>
+
+<h2>
+<a id="StarDist" class="anchor" href="#stardist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Icy</h1>	
+<ul type="disk">
+<li><a target="_blank" href="https://github.com/stardist/stardist">Stardist gitub repositry</a></li>
+<li><a target="_blank" href="https://imagej.net/plugins/stardist">StarDist Fiji plugin</a></li>
+</ul>
+</h2>
+
+<h2>
+<a id="Noise2Void" class="anchor" href="#n2v" aria-hidden="true"><span class="octicon octicon-link"></span></a>Icy</h1>	
+<ul type="disk">
+<li><a target="_blank" href="https://github.com/juglab/n2v">N2V gitub repositry</a></li>
+<li><a target="_blank" href="https://imagej.net/plugins/n2v">N2V Fiji plugin</a></li>
 </ul>
 </h2>
 
