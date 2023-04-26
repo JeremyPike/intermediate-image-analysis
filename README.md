@@ -11,5 +11,5 @@ Jeremy Pike, [COMPARE](http://www.birmingham-nottingham.ac.uk/compare/)
 
 # Summary: 
 
-This course will cover common image analysis problems including deconvolution, segmentation, tracking and colocalization analysis. Graphical programming and scripting for workflow automation will also be introduced. The course will focus on practical sessions using leading open source software.
+This course will cover common image analysis problems including deconvolution, denoising, segmentation, tracking and colocalization analysis. The course will focus on practical sessions using leading open source software.Please see the [Course website](https://jeremypike.github.io/intermediate-image-analysis/) for more information.
 
